@@ -4,30 +4,22 @@
         <meta charset="utf-8">
         <meta name="author" content="nomad coders">
         <meta name="description" content="Welcome to my Kakao Clone">
-        <title>CSS States</title>
+        <title>Transitions</title>
         <style>
-       .box{
-           background-color: green;
-           font-size: 40px;
-       }
-       .box:hover{
-           background-color: pink;
-       }
-
-       .box:active{
-           background-color: blue;
-       }
-       .box:focus{
-           background-color: red;
-       }
+            .box{
+                background-color: green;
+                color: white;
+                transition: background-color 5s ease-in-out;
+            }
+            .box:hover{
+                background-color: pink;
+            }
 
         </style>
     </head>
     <body>
-       
-            <textarea class="box">sdfhsdfh</textarea>
-
-       
-        
+       <span class="box">
+           Text
+       </span>
     </body>
 </html>
