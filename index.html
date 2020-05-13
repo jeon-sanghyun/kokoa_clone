@@ -6,42 +6,51 @@
         <meta name="description" content="Welcome to my Kakao Clone">
         <title>flex</title>
         <style>
-            html,body{
-                height: 100%;
-            }
-            .father{
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                flex-direction: row-reverse;
-                height: 100%;
-                flex-wrap: nowrap;
-            }
-            .box{
-                background-color: green;
-                width: 200px;
-                height: 200px;
-                border: 1px solid black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: white;
-            }
+       input[required="required"]{
+           background-color: green;
+       }
+       /* input[type="password"]{
+           background-color: yellow;
+       } */
+       input{
+           border: 1px solid blue;
+       }
+
+       .container > .box{
+           background-color: green;
+       }
+       .box{
+           background-color: yellow;
+           display: block;
+           height: 100px;
+           border: 1px solid black;
+       }
+       .box:last-child{
+           background-color: pink;
+       }
+       .child{
+           background-color: purple;
+           width: 40px;
+       }
 
         </style>
     </head>
     <body>
-        <div class="father">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-            <div class="box">5</div>
-            <div class="box">6</div>
-            <div class="box">7</div>
-            <div class="box">8</div>
-            <div class="box">9</div>
-            <div class="box">10</div>
+        <div class="container">
+            <div class="box"></div>
+                <div class="box child"></div>
+            <div class="box"></div>
+            <div class="box">
+                <input type="password" required="required">
+                <input type="submit">
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
 
         </div>
         
