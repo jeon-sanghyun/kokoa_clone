@@ -4,27 +4,59 @@
         <meta charset="utf-8">
         <meta name="author" content="nomad coders">
         <meta name="description" content="Welcome to my Kakao Clone">
-        <title>Box Model</title>
+        <title>position</title>
         <style>
-           
-            .box{
+            body,html{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body{
                 background-color: yellow;
-                width: 200px;
-                height: 200px;
-                border-width: 10px;
-                border-style: solid;
-                border-color: black;
-                display: inline;
-            }</style>
+                height: 400%;}
+
+            /* 
+            fixed
+            #boxone{
+                height: 300px;
+                width: 300px;
+                background-color: blue;
+                position: static;
+            }
+            #boxtwo{
+                height: 300px;
+                width: 100%;
+                background-color: green;
+                position: fixed;
+                bottom:30%;
+                left: 0;
+            } */
+
+            .abs-box{
+                width: 400px;
+                height: 400px;
+                background-color: blue;
+                position: relative;
+            }
+            .abs-child{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+
+                </style>
     </head>
     <body>
-        <!-- <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div> -->
-
-        <span class="box">1</span>
-        <span class="box">23</span>
-        <span class="box">456</span>
-
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+        <!--
+            fixed 
+            <div id="boxone"></div>
+        <div id="boxtwo"></div> -->
+        
     </body>
 </html>
